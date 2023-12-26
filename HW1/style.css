@@ -1,0 +1,10 @@
+html,body{
+    height: 100%;
+    margin: 0; 
+}
+
+.box{
+    background-color:aqua;
+    height: 100%; /*因為預設div 有display block屬性 所以不用width:100%?*/
+    text-align: center;
+}
