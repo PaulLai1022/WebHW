@@ -1,0 +1,71 @@
+body{
+    background-color: #212121;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 90vh
+}
+
+.container{
+    position: relative;
+    width: 110px;
+    height: 30px;
+    background-color: white;
+    border-radius: 100px;
+
+}
+
+.container::before{
+    content:'';
+    position: absolute;
+    background:white;
+    left: 10px; 
+    top: -20px; /*這裡為什麼*/
+    width: 35px;
+    height:35px; 
+    border-radius: 50%;
+    
+}
+.container::after{
+    content:'';
+    position: absolute;
+    background: white;
+    right:20px;
+    top:-33px;
+    width: 60px;
+    height:50px;
+    border-radius: 70%;
+}
+
+.rainy{
+    position: relative; /*這個relative跟哪個relative呢 container嗎？*/
+    display:flex;
+    z-index:1;
+}
+
+.rainy  span{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: lightskyblue;
+    margin: 0 2px; 
+    animation: rain 5s linear infinite;
+    animation-duration:2s;
+    transform-origin: bottom;
+    
+}
+
+@keyframes rain{
+    0%{
+        transform: translateY(0);
+    }
+    70%{
+        transform: translateY(100px);
+
+    }
+    100%{
+        transform: translateY(100px);
+    }
+}
