@@ -12,6 +12,7 @@
     background-color: rgba(250, 250, 252, .8);
     height: 7vh;
     padding-top: 10px;
+    z-index: 1000;
 }
 
 .navbar a {
@@ -34,4 +35,50 @@
 .homepageCollection img+ {
     margin-top: 50px;
     display: block;
+}
+
+.textinImage {
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 5%;
+    font-size: 3.5rem;
+    transform: translate(-50%, -50%);
+
+}
+
+.textinImage1 {
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 12%;
+    font-size: 2.5rem;
+    transform: translate(-50%, -50%);
+}
+
+.linkInImage {
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 17%;
+    font-size: 1.5rem;
+
+    transform: translate(-50%, -50%);
+}
+
+.linkInImage a {
+    text-decoration: none;
+    color: #2997FF;
+}
+
+.firstImage {
+    position: relative;
+}
+
+.secondImage {
+    position: relative;
+}
+
+.linkInImage:nth-child(2) {
+    color: black;
 }
