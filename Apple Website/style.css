@@ -23,6 +23,16 @@
     margin-right: 1rem;
 }
 
+.firstImage {
+    margin-top: 10px;
+}
+
+.secondImage {
+    margin-top: 10px;
+}
+
+
+
 .mainContent {
     margin-top: 7vh;
     text-align: center;
@@ -58,10 +68,10 @@
 
 .linkInImage {
     position: absolute;
-    color: white;
+
     left: 50%;
-    top: 17%;
-    font-size: 1.5rem;
+    top: 18%;
+    font-size: 1.1rem;
 
     transform: translate(-50%, -50%);
 }
@@ -69,6 +79,10 @@
 .linkInImage a {
     text-decoration: none;
     color: #2997FF;
+}
+
+.linkInImage a:hover {
+    text-decoration: underline;
 }
 
 .firstImage {
@@ -79,6 +93,19 @@
     position: relative;
 }
 
-.linkInImage:nth-child(2) {
+.secondImage .textinImage {
     color: black;
+}
+
+.secondImage .textinImage1 {
+    color: black;
+}
+
+a+a {
+    margin-left: 20px
+}
+
+.sideBar {
+    position: sticky;
+
 }
