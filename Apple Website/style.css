@@ -92,6 +92,10 @@
     text-decoration: none;
 }
 
+.homepageCollection{
+    overflow: auto; 
+}
+
 .homepageCollection img+ {
     margin-top: 50px;
     display: block;
@@ -156,6 +160,10 @@ a+a {
 }
 
 .sideBar {
-    position: sticky;
+    display: flex;
+    flex-direction: column;
+    position: sticky; /* From the top */ /* From the right */
+    margin-left: 80vw;
+    bottom: 500px; 
 
 }
