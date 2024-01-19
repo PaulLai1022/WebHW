@@ -8,8 +8,12 @@
     text-align: center;
 }
 
-#area{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.close{
+    text-align: center;
 }
+
+.area{
+    display: none; 
+    
+}
+
