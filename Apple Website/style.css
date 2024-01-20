@@ -4,11 +4,11 @@
 }
 
 .navbar {
-    box-sizing: border-box;
     position: fixed;
     top: 0;
     width: 100%;
     background-color: rgba(22, 22, 23, .8);
+
     height: 7vh;
     z-index: 1000;
     display: flex;
@@ -26,13 +26,54 @@
     margin-right: 1rem;
 }
 
-.macDropdown {
-    position: relative;
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    top: 7vh;
+    color: white;
+    background-color: rgba(22, 22, 23, .8);
+
+    /*這裡應該要用甚麼來定位*/
+    padding-left: 20%;
+    padding-top: 1.5rem;
+
+    display: flex;
+
+}
+
+.dropdown-menu ul {
+    list-style: none;
+}
+
+.dropdown-menu ul li {
+    margin-top: 0.5rem;
+    margin-right: 2.5rem;
+}
+
+.dropdown-menu ul:nth-child(1) li {
+    margin-right: 5rem;
+}
+
+.dropdown-menu ul li:first-child {
+    color: rgba(255, 255, 255, .8);
+
+}
+
+.dropdown-menu ul:nth-child(1) li:not(:first-child) {
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 
+
+
+/*
 .dropdown-menu {
     position: absolute;
+    width: 100%;
+    left: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -40,10 +81,10 @@
 
     background-color: rgba(22, 22, 23, .8);
     width: 100vw;
-    /* Set a fixed or appropriate width */
+
 
     height: 50vh;
-    top: calc(100%);
+    top: calc(100%+0.25rem);
 
     color: white;
     opacity: 1;
@@ -54,17 +95,7 @@
     pointer-events: none;
 }
 
-.navbar>a:focus+.dropdown-menu {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
-
-.dropdown-menu p {
-
-    margin-top: 1rem;
-
-}
+*/
 
 .header {
     margin-top: 9vh;
