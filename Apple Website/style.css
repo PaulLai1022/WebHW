@@ -8,10 +8,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-    text-align: center;
     background-color: rgba(22, 22, 23, .8);
     height: 7vh;
-    padding-top: 4px;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -28,146 +26,124 @@
     margin-right: 1rem;
 }
 
- 
-
-
-
-
-
-
-
-.dropdown {
-    position: relative
+.macDropdown {
+    position: relative;
 }
 
 
 .dropdown-menu {
     position: absolute;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 
 
     background-color: rgba(22, 22, 23, .8);
-    width: 100vw; /* Set a fixed or appropriate width */
+    width: 100vw;
+    /* Set a fixed or appropriate width */
 
     height: 50vh;
     top: calc(100%);
 
     color: white;
-    opacity: 0; 
+    opacity: 1;
     transform: translateY(-10px);
 
-    transition: opacity 350ms ease-in-out, tansform 350ms ease-in-out; 
+    transition: opacity 350ms ease-in-out, tansform 350ms ease-in-out;
 
     pointer-events: none;
 }
 
-.navbar > a:focus + .dropdown-menu{
-    opacity: 1; 
+.navbar>a:focus+.dropdown-menu {
+    opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
 }
 
-.dropdown-menu p{
+.dropdown-menu p {
 
-    margin-top: 1rem;   
+    margin-top: 1rem;
 
 }
 
-
-
-.firstImage {
-    margin-top: 10px;
-}
-
-.secondImage {
-    margin-top: 10px;
-}
-
-
-
-.mainContent {
-    margin-top: 7vh;
+.header {
+    margin-top: 9vh;
     text-align: center;
 }
 
-.mainContent a {
-    text-decoration: none;
+
+a+a {
+    margin-left: 15px
 }
 
-.homepageCollection{
-    overflow: auto; 
+
+.firstImage {
+    display: flex;
+    background-image: url('appleImg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding-top: 20px;
+    padding-bottom: 650px;
+
+    margin-top: 15px;
 }
 
-.homepageCollection img+ {
-    margin-top: 50px;
-    display: block;
-}
-
-.textinImage {
-    position: absolute;
+.firstImage .container {
     color: white;
-    left: 50%;
-    top: 5%;
-    font-size: 3.5rem;
-    transform: translate(-50%, -50%);
+    max-width: 200px;
+    /*為什麼這個可以調整text的位置?*/
 
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
 }
 
-.textinImage1 {
-    position: absolute;
-    color: white;
-    left: 50%;
-    top: 12%;
-    font-size: 2.5rem;
-    transform: translate(-50%, -50%);
-}
 
-.linkInImage {
-    position: absolute;
-
-    left: 50%;
-    top: 18%;
-    font-size: 1.1rem;
-
-    transform: translate(-50%, -50%);
-}
-
-.linkInImage a {
+.container a {
     text-decoration: none;
     color: #2997FF;
 }
 
-.linkInImage a:hover {
+.container a:hover {
     text-decoration: underline;
 }
 
-.firstImage {
-    position: relative;
-}
-
 .secondImage {
-    position: relative;
+    display: flex;
+    background-image: url('appleImg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 650px;
+    margin-top: 15px;
 }
 
-.secondImage .textinImage {
+
+.secondImage .container {
     color: black;
+    max-width: 200px;
+    /*為什麼這個可以調整text的位置?*/
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
 }
 
-.secondImage .textinImage1 {
-    color: black;
-}
 
-a+a {
-    margin-left: 20px
-}
+/*
 
 .sideBar {
     display: flex;
     flex-direction: column;
-    position: sticky; /* From the top */ /* From the right */
-    margin-left: 80vw;
-    bottom: 500px; 
+    position: sticky;
+margin-left: 80vw;
+bottom: 500px;
 
 }
+
+*/

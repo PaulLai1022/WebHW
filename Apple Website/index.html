@@ -9,13 +9,16 @@
     <link href='style.css' rel='stylesheet' />
 </head>
 
+<!--修改dom結構-->
+<!--image background-->
+<!--sidebar, navbar, media query, 命名, footer-->
+<!--image as background-->
+
 <body>
-    <!--修改dom結構-->
-    <!--image background-->
-    <!--sidebar, navbar, media query, 命名, footer-->
-    
-<div class = 'main'>
-            <div class='navbar' data-dropdown>
+    <div class='main'>
+
+        <div class='navbar' data-dropdown>
+            <div class=macDropdown>
                 <a href='#' data-dropdown-button>mac</a>
                 <div class=dropdown-menu>
                     <p>iPad</p>
@@ -32,94 +35,65 @@
                     <p>iPhone</p>
                     <p>iPhone</p>
                     <p>iPhone</p>
-
                 </div>
+            </div>
 
-
-                <a href='#'>iphone</a>
+            <div class=iphoneDropdown>
+                <a href='#' data-dropdown-button>iphone</a>
+                <!--
                 <div class=dropdown-menu>
-                    <p>hi</p>
-                    <p>hi</p>
-                    <p>iPad</p>
-                    <p>iPhone</p>
-                    <p>iPhone</p>
-                    <p>iPhone</p>
-                    <p>iPhone</p>
-                    <p>iPhone</p>
-                    <p>hi</p>
-                    <p>iPhone</p>
-                    <p>hi</p>
-                    <p>iPhone</p>
-                    <p>iPhone</p>
-                    <p>iPhone</p>
 
                 </div>
-
-                <a href='#'>ipad</a>
-
-
-        </div>
-        <div class='mainContent'>
-            <p>
-                This is a example website demo from Apple first line.
-                <br>
-                This is the second example line decmo from <a href='apple'>apple</a>
-            </p>
-        </div>
-        <div calss='homepageCollection'>     
-
-            <div class=firstImage > <!--image as background-->
-                <div class=textinImage>iPhone 15 pro </div>
-                <div class=textinImage1>超堅固 </div>
-                <div class='linkInImage'>
-                    <a href='newpage'>進一步了解> </a>
-                    <a href='newpage'>購買> </a>
-                </div>
-                <img src='appleImg1.jpg' alt='appleImg' width='100%'>
+                -->
             </div>
-            
+        </div>
 
-            <div class=secondImage> <!--image as background-->
+        <section class='header'>
+            <div class=container>
+                <p>
+                    This is a example website demo from Apple first line.
+                    <br>
+                    This is the second example line decmo from <a href='apple'>apple</a>
+                </p>
+            </div>
+        </section>
 
-
-
-                <div class=textinImage>iPhone 15 pro </div>
-                <div class=textinImage1>超堅固 </div>
-                <div class='linkInImage'>
-                    <a href='newpage'>進一步了解> </a>
-                    <a href='newpage'>購買> </a>
+        <div calss='homepageCollection'>
+            <div class=firstImage>
+                <div class=container>
+                    <h1>iPhone 15 pro</h1>
+                    <h2>超堅固</h2>
+                    <a href='newpage'>進一步了解 </a>
+                    <a href='newpage'>購買 </a>
                 </div>
-                <img src='appleImg2.jpg' alt='appleImg' width='100%'>
-
 
             </div>
 
+            <div class=secondImage>
+                <div class=container>
+                    <h1>iPhone 15 pro</h1>
+                    <h2>超堅固</h2>
+                    <a href='newpage'>進一步了解 </a>
+                    <a href='newpage'>購買 </a>
+                </div>
+
+            </div>
+
+
+            <!--
             <div class='sideBar'>
                 <a href='mac'>a</a>
                 <a href='mac'>b</a>
                 <a href='mac'>c</a>
             </div>
 
-
-
-
-
-
-
-            
             <img src='appleImg2.jpg' alt='appleImg' width='100%'>
-
-
-
+            -->
 
         </div>
 
 
-
-</div>
-
-
-
+    </div>
 
 
     <script src="script.js"> </script>
