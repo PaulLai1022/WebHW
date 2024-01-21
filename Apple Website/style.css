@@ -26,6 +26,12 @@
     margin-right: 1rem;
 }
 
+.dropDownButton a:focus+.dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
 .dropdown-menu {
     position: absolute;
     left: 0;
@@ -40,11 +46,19 @@
     padding-top: 1.5rem;
 
     display: flex;
+    opacity: 0;
+    transition: opacity 350ms ease-in-out, transform 100ms ease-in-out;
+    transform: translateY(-10px);
+    pointer-events: none;
 
 }
 
 .dropdown-menu ul {
     list-style: none;
+}
+
+.dropdown-menu ul li:nth-child(1) {
+    margin-bottom: 1.2rem;
 }
 
 .dropdown-menu ul li {
@@ -65,37 +79,6 @@
     font-size: 1.7rem;
     font-weight: bold;
 }
-
-
-
-
-/*
-.dropdown-menu {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-
-    background-color: rgba(22, 22, 23, .8);
-    width: 100vw;
-
-
-    height: 50vh;
-    top: calc(100%+0.25rem);
-
-    color: white;
-    opacity: 1;
-    transform: translateY(-10px);
-
-    transition: opacity 350ms ease-in-out, tansform 350ms ease-in-out;
-
-    pointer-events: none;
-}
-
-*/
 
 .header {
     margin-top: 9vh;
@@ -163,6 +146,29 @@ a+a {
     margin-right: auto;
 
     text-align: center;
+}
+
+.sideBar {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    top: 7vh;
+    margin-left: 90vw;
+    border: 1px solid #ccc;
+
+}
+
+.sideBar ul {
+    list-style: none;
+}
+
+footer {
+    margin-top: 1.5rem;
+    background-color: rgb(245, 245, 247);
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 1.5rem;
+    color: rgba(0, 0, 0, 0.56);
 }
 
 
