@@ -196,6 +196,23 @@ margin-right: 5rem;
     font-size: 0.9rem;
 }
 
+.copyRight{
+    padding-bottom: 1.5rem; 
+}
+
+.copyRight ul{
+    list-style: none;
+    display: flex; 
+}
+
+.copyRight ul li{
+    margin-right: 2rem;
+}
+
+.copyRight ul li:nth-child(2){
+    margin-right: 11rem;
+}
+
 /*
 
 .sideBar {
