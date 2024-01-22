@@ -172,6 +172,15 @@ footer {
     color: rgba(0, 0, 0, 0.56);
 }
 
+.fiveColumnFooter{
+    display: flex; 
+    flex-direction: row;
+}
+
+.fiveColumnFooter ul{
+    list-style: none;
+}
+
 
 /*
 
