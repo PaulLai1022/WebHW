@@ -166,10 +166,11 @@ a+a {
 footer {
     margin-top: 1.5rem;
     background-color: rgb(245, 245, 247);
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 1.5rem;
     color: rgba(0, 0, 0, 0.56);
+    font-size: 0.87rem; 
 }
 
 .fiveColumnFooter{
@@ -181,6 +182,19 @@ footer {
     list-style: none;
 }
 
+.columnList{
+margin-right: 5rem;
+}
+
+.columnList h3{
+    margin-bottom: 0.7rem;
+    font-size: 0.9rem;
+}
+
+.columnList li{
+    margin-bottom: 0.7rem;
+    font-size: 0.9rem;
+}
 
 /*
 
